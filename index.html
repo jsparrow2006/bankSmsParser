@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>SMS to RegExp</title>
+    <link rel='stylesheet' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+<div class='wrapper'>
+    <div class='st'>
+        <div class='inputContainer1'>
+            <input style='width: 100%' type='text' onkeyup='if (event.keyCode == 13) getSmsInfo(this.value)'>
+        </div>
+        <div class='inputContainer'>
+            <textarea id = 'inputText' name="textarea" style="width:100%; height:150px;" onkeyup='getConstructText(this.value)'></textarea>
+        </div>
+        <div id='setPanel'>
+            <span id = 'defText' style='color: black' onclick='setPattern(this)'></span>
+            <span id = 'popol' style='color: green' onclick='setPattern(this)'>Пополнение</span>
+            <span id = 'spis' style='color: red' onclick='setPattern(this)'>Списание</span>
+            <span id = 'summ'  style='color: blue' onclick='setPattern(this)'>Сумма</span>
+            <span id = 'ost' style='color: blueviolet' onclick='setPattern(this)'>Остаток</span>
+            <span id = 'date'  style='color: coral' onclick='setPattern(this)'>Дата</span>
+        </div>
+        <div id='textConstruct'></div>
+        <div class='otputRegExp'></div>
+    </div>
+</div>
+</body>
+</html>

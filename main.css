@@ -1,0 +1,94 @@
+.constReg{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: auto;
+    color: black;
+    font-size: 18px;
+    border-color: transparent;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: coral;
+    min-height: 300px;
+    justify-content: center;
+
+}
+
+.st{
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    min-height: 100%;
+    width: 40%;
+}
+
+.inputContainer{
+    height: 150px;
+    background-color: white;
+    border: solid silver 1px;
+}
+
+.inputContainer1{
+    height: 50px;
+    background-color: coral;
+}
+
+
+#textConstruct{
+    /*height: 250px;*/
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: solid silver 1px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#setPanel{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    border: solid black 1px;
+}
+#setPanel span{
+    margin: 12px;
+    cursor: hand;
+    font-size: 17px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+#setPanel span:hover{
+    font-size: 20px;
+}
+
+.otputRegExp{
+    height: 100px;
+    background-color: white;
+    border: solid silver 1px;
+}
+
+.char {
+    margin-right: 3px;
+    margin-bottom: 13px;
+    height: 10px;
+}
+
+.char:hover{
+    color: cornflowerblue;
+    text-transform: uppercase;
+}
